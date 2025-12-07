@@ -1,0 +1,27 @@
+.portfolioCard {
+  cursor: pointer;
+  overflow: hidden;
+}
+.cardLayout {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1abc9cea;
+  opacity: 0;
+  transition: opacity 0.4s ease-in;
+  cursor: pointer;
+  /*$ Important To Let Me Click on Img  */
+  pointer-events: none;
+}
+.portfolioCard:hover .cardLayout {
+  opacity: 1;
+}
+.cardLayout i {
+  font-size: 3rem;
+  color: #ffff;
+}
